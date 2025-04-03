@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Preguntas</title>
+    <link rel="stylesheet" href="../css/pregunta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor-preguntas">
+        <header class="cabecera">
+            <h1><i class="fas fa-question-circle"></i> Generador de Preguntas</h1>
+            <p>Ingresa un texto y podrás hacer preguntas sobre su contenido</p>
+        </header>
+
+        <div class="contenedor-principal">
+            <!-- Cuadro 1: Texto original -->
+            <div class="seccion-texto">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-book-open"></i> Texto de Referencia</h2>
+                </div>
+                <textarea id="texto-original" class="area-texto" placeholder="Texto"></textarea>
+            </div>
+
+            <!-- Cuadro 2: Preguntas -->
+            <div class="seccion-preguntas">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-question"></i>Preguntas</h2>
+                </div>
+                <textarea id="area-preguntas" class="area-texto" placeholder="Escribe tus preguntas"></textarea>
+            </div>
+
+            <!-- Cuadro 3: Respuestas -->
+            <div class="seccion-respuestas">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-comment-dots"></i> Respuestas</h2>
+                </div>
+                <div id="area-respuestas" class="area-respuestas">
+                    <p class="placeholder"></p>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="controles">
+                <button id="btn-limpiar" class="btn-limpiar">
+                    <i class="fas fa-eraser"></i> Limpiar Todo
+                </button>
+                <button id="btn-generar" class="btn-generar" disabled>
+                    <i class="fas fa-play"></i> Generar Respuestas
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/pregunta.js"></script>
+</body>
+</html>

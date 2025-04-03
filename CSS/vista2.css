@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+/* Contenedor de cuadros */
+.contenedor-cuadros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Estilos de cada cuadro de función */
+.cuadro-funcion {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro-funcion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icono {
+    width: 80px;
+    height: 80px;
+    background-color: #e8f4fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icono img {
+    width: 50px;
+    height: 50px;
+}
+
+.cuadro-funcion h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.cuadro-funcion p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.btn-funcion {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.btn-funcion:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contenedor-cuadros {
+        grid-template-columns: 1fr;
+    }
+    
+    .titulo-principal {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+}

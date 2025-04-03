@@ -1,0 +1,215 @@
+/* Estilos generales */
+:root {
+    --color-primario: #4361ee;
+    --color-secundario: #3f37c9;
+    --color-fondo: #f8f9fa;
+    --color-texto: #212529;
+    --color-borde: #dee2e6;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transicion: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .contenedor-resumen {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabecera */
+  .cabecera {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cabecera h1 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .cabecera p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  /* Contenedor principal */
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+  }
+  
+  /* Secciones de texto */
+  .seccion-texto, .seccion-resultado {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    transition: var(--transicion);
+  }
+  
+  .encabezado-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #f1f3f5;
+    border-bottom: 1px solid var(--color-borde);
+  }
+  
+  .encabezado-seccion h2 {
+    font-size: 1.25rem;
+    color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Áreas de texto */
+  .area-texto, .area-resultado {
+    width: 100%;
+    min-height: 200px;
+    padding: 1.5rem;
+    border: none;
+    resize: vertical;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .area-texto {
+    background-color: white;
+  }
+  
+  .area-texto:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--color-primario);
+  }
+  
+  .area-resultado {
+    background-color: #f8f9fa;
+  }
+  
+  .placeholder {
+    color: #adb5bd;
+    font-style: italic;
+  }
+  
+  /* Contadores */
+  .contador-caracteres {
+    text-align: right;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+    background-color: #f1f3f5;
+    border-top: 1px solid var(--color-borde);
+  }
+  
+  /* Controles simplificados */
+  .controles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Botones simplificados */
+  .btn-ejemplo, .btn-limpiar, .btn-resumir {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transicion);
+  }
+  
+  .btn-ejemplo {
+    background-color: #e9ecef;
+    color: var(--color-texto);
+  }
+  
+  .btn-ejemplo:hover {
+    background-color: #dee2e6;
+  }
+  
+  .btn-limpiar {
+    background-color: #f8f9fa;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }
+  
+  .btn-limpiar:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .btn-resumir {
+    background-color: var(--color-primario);
+    color: white;
+  }
+  
+  .btn-resumir:hover {
+    background-color: var(--color-secundario);
+    transform: translateY(-2px);
+  }
+  
+  /* Pie de página */
+  .pie-pagina {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-borde);
+    color: #6c757d;
+  }
+  
+  .pie-pagina a {
+    color: var(--color-primario);
+    text-decoration: none;
+  }
+  
+  .pie-pagina a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contenedor-resumen {
+      padding: 1rem;
+    }
+    
+    .cabecera h1 {
+      font-size: 2rem;
+    }
+    
+    .controles {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .btn-ejemplo, .btn-limpiar, .btn-resumir {
+      width: 100%;
+      justify-content: center;
+    }
+  }
