@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Texto</title>
+    <link rel="stylesheet" href="../css/traduccion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor-traduccion">
+        <header class="cabecera">
+            <h1><i class="fas fa-language"></i> Traductor de Texto</h1>
+            <p>Ingresa el texto que deseas traducir</p>
+        </header>
+
+        <div class="contenedor-principal">
+            <!-- Cuadro 1: Texto original -->
+            <div class="seccion-original">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-keyboard"></i> Texto Original</h2>
+                </div>
+                <textarea id="texto-original" class="area-texto" placeholder="Escribe o pega aquí el texto a traducir..."></textarea>
+            </div>
+
+            <!-- Cuadro 2: Texto traducido -->
+            <div class="seccion-traducido">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-globe"></i> Texto Traducido</h2>
+                </div>
+                <div id="texto-traducido" class="area-traducido">
+                    <p class="placeholder">La traducción aparecerá aquí...</p>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="controles">
+                <button id="btn-limpiar" class="btn-limpiar">
+                    <i class="fas fa-eraser"></i> Limpiar Todo
+                </button>
+                <button id="btn-traducir" class="btn-traducir" disabled>
+                    <i class="fas fa-exchange-alt"></i> Traducir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/traduccion.js"></script>
+</body>
+</html>

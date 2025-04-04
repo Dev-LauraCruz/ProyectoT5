@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Imágenes</title>
+    <link rel="stylesheet" href="../css/generar-imagen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor-imagen">
+        <header class="cabecera">
+            <h1><i class="fas fa-image"></i> Generador de Imágenes</h1>
+            <p>Describe la imagen que deseas generar</p>
+        </header>
+
+        <div class="contenedor-principal">
+            <!-- Cuadro 1: Descripción de la imagen -->
+            <div class="seccion-descripcion">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-edit"></i> Descripción</h2>
+                </div>
+                <textarea id="texto-descripcion" class="area-texto" placeholder="Ej: 'Un paisaje montañoso al atardecer con un río serpenteante...'"></textarea>
+            </div>
+
+            <!-- Cuadro 2: Imagen generada -->
+            <div class="seccion-imagen">
+                <div class="encabezado-seccion">
+                    <h2><i class="fas fa-image"></i> Imagen Generada</h2>
+                </div>
+                <div id="imagen-generada" class="area-imagen">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>La imagen aparecerá aquí</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="controles">
+                <button id="btn-limpiar" class="btn-limpiar">
+                    <i class="fas fa-eraser"></i> Limpiar
+                </button>
+                <button id="btn-generar" class="btn-generar">
+                    <i class="fas fa-magic"></i> Generar Imagen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/generar-imagen.js"></script>
+</body>
+</html>
