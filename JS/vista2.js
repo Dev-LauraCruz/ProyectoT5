@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Mapeo de IDs a páginas destino
             const paginasDestino = {
-                'resumen': 'resumen.html',
-                'pregunta': 'pregunta.html',
-                'traduccion': 'traduccion.html',
-                'generar-preguntas': 'generar-preguntas.html',
-                'generar-imagenes': 'generar-imagenes.html'
+                'resumen': '/resumen',
+                'pregunta': '/pregunta',
+                'traduccion': '/traduccion',
+                'generar-preguntas': '/generar-preguntas',
+                'generar-imagenes': '/generar-imagenes'
             };
             
             if (paginasDestino[idFuncion]) {
